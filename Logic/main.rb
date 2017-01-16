@@ -6,7 +6,7 @@ class Sudoku_logic
 
      board = {}
 
-     finnished
+     finnished = []
 
      def solve (unfinished)
           sort unfinished
@@ -25,14 +25,12 @@ class Sudoku_logic
      def sort (sortee)
           xr = 1
           yr = 1
-          sortee.each do
-               |number|
-               number.each do
-                    |num|
+          sortee.each do |number|
+               number.each do |num|
                     board[[xr,yr]] = num
-                    xr++
+                    xr += 1
                end
-               yr ++
+               yr += 1
                xr = 1
           end
           board.sort!
@@ -89,6 +87,4 @@ class Sudoku_logic
                end
           end
      end
-end
-
 end
