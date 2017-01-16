@@ -1,3 +1,5 @@
+require_relative 'sudoku_logic'
+
 one = [[nil,nil,7,nil,nil,nil,nil,1,5],[nil,nil,nil,3,9,7,nil,nil,nil],[nil,6,2,nil,1,nil,4,nil,9],
 [nil,2,nil,nil,nil,1,5,4,3],[7,nil,nil,4,nil,9,nil,nil,1],[4,8,1,2,nil,nil,nil,6,nil],
 [9,nil,6,nil,2,nil,7,3,nil],[nil,nil,nil,9,8,4,nil,nil,nil],[1,5,nil,nil,nil,nil,2,nil,nil]]

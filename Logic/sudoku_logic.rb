@@ -4,7 +4,7 @@ class Sudoku_logic
      collumns = []
      squares = []
 
-     board = {}
+     board = Hash.new
 
      finnished = []
 
@@ -14,11 +14,11 @@ class Sudoku_logic
           return finnished
      end
 
-     def sorted
+     def get_sorted
           return [rows,collumns,squares]
      end
 
-     def board
+     def coords
           return board
      end
 
@@ -26,10 +26,10 @@ class Sudoku_logic
           xr = 1
           yr = 1
           sortee.each do |number|
-               number.each do |num|
+               number.each { |num|
                     board[[xr,yr]] = num
                     xr += 1
-               end
+               }
                yr += 1
                xr = 1
           end
@@ -49,6 +49,11 @@ class Sudoku_logic
                collumns[x-1]||=temp
           end
           #sorts for the squares
+          square_sort
+
+     end
+
+     def square_sort
           board.each do
                |key, value|
                if key[0] <4
