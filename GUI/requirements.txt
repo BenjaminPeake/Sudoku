@@ -1,0 +1,1 @@
+I need a 'Sudoku_gui' object that contains a 'get_data' method which returns a 9*9 array and a 'display' method that takes a 9*9 array of ints and display's them on the screen
