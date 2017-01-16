@@ -6,12 +6,10 @@ screen = Sudoku_gui.new
 
 puzzle = Sudoku_logic.new
 
-puzzle.startup(screen.get_data)
-
 #solve from logic with input from gui when button pressed
 
-solution = puzzle.solve
+solution = puzzle.solve(screen.get_data)
 
 #display answer from logig onto gui
 
-puzzle.display(solution)
+screen.display(solution)
