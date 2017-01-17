@@ -10,4 +10,17 @@ one_a = [[8,9,7,6,4,2,3,1,5],[5,1,4,3,9,7,6,8,2],[3,6,2,5,1,8,4,7,9],
 
 puzzle = Sudoku_logic.new
 
+
+
 puts one_a==puzzle.solve(one) ? "All good!":"Try again!"
+
+puzzle.solve(one)
+
+puts puzzle.get_sorted#.each do |k|
+     #puts k
+     #k.each do |l|
+     #     l.each do |f|
+     #          print f
+     #     end
+     #end
+#end
