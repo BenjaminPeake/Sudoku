@@ -1,3 +1,5 @@
+require_relative 'sudoku_logic'
+
 one = [[nil,nil,7,nil,nil,nil,nil,1,5],[nil,nil,nil,3,9,7,nil,nil,nil],[nil,6,2,nil,1,nil,4,nil,9],
 [nil,2,nil,nil,nil,1,5,4,3],[7,nil,nil,4,nil,9,nil,nil,1],[4,8,1,2,nil,nil,nil,6,nil],
 [9,nil,6,nil,2,nil,7,3,nil],[nil,nil,nil,9,8,4,nil,nil,nil],[1,5,nil,nil,nil,nil,2,nil,nil]]
@@ -8,4 +10,17 @@ one_a = [[8,9,7,6,4,2,3,1,5],[5,1,4,3,9,7,6,8,2],[3,6,2,5,1,8,4,7,9],
 
 puzzle = Sudoku_logic.new
 
+
+
 puts one_a==puzzle.solve(one) ? "All good!":"Try again!"
+
+puzzle.solve(one)
+
+puts puzzle.get_sorted#.each do |k|
+     #puts k
+     #k.each do |l|
+     #     l.each do |f|
+     #          print f
+     #     end
+     #end
+#end
